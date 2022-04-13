@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('assets/background.png') no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #EBE0B8;
+    background-color: #0E1633;
+    font-family: "Caveat", cursive;
+    font-size: 46px; 
+    max-width: 9rem;
+    margin: 3.5rem auto;
+    padding: 0.85rem;
+}
+
+.container {
+    max-width: 37.5rem;
+    height: 31.25rem;
+    text-align: center;
+    margin: auto;
+}
+
+textarea {
+    width: 37.5rem;
+    height: 26rem;
+    resize: none; 
+    font-family: "Comic Neue";
+    color: #0E1633; 
+    background-color: #EBE0B8;
+    font-size: 18px; 
+    border-radius: 22px;
+    box-shadow: 5px 5px 38px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+}
+
+textarea:focus {
+    outline-color: #EBE0B8;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(236, 229, 205, 0.65);
+}
+
+.btn-container {
+    padding: 1.75rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.4rem;
+    background-color: #EBE0B8;
+    color: #0E1633;
+    cursor: pointer;
+    font-family: "Comic Neue";
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    outline-color: #EBE0B8;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(236, 229, 205, 0.65);
+}
+
+@media (max-width: 650px) {
+
+    h1 {
+        margin: 2rem auto;
+    }
+
+    .container {
+        max-width: 28rem;
+    }
+
+    textarea {
+        width: 28rem;
+    }
+
+    .btn-container {
+        justify-content: flex-start;
+    }
+
+    .btn {
+        margin: 0 1.34rem 1.34rem 0;
+    }
+
+}
+
+@media (max-width: 512px) {
+
+    h1 {
+        font-size: 38px;
+        max-width: 7rem;
+    }
+
+    .container {
+        max-width: 22rem;
+    }
+
+    textarea {
+        width: 22rem;
+        height: 25rem;
+    }
+
+    .btn {
+        padding: 0.3rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    body {
+        background: url('assets/bg.png') no-repeat fixed;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 38px;
+        max-width: 7rem;
+    }
+
+    .container {
+        max-width: 22rem;
+    }
+
+    textarea {
+        width: 22rem;
+        height: 25rem;
+    }
+
+    .btn {
+        padding: 0.3rem;
+    }
+
+}
+
+
+
